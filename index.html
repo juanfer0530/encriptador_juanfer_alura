@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge Encriptador de Texto</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+<body>
+    <header>
+        <div>
+            <h1 class="header-titulo">Encriptador de texto</h1>
+        </div>
+    </header>
+    <main>
+        <section class="columna-izquierda">
+            <textarea class="area-input" placeholder="Ingresa el texto" cols="30" rows="10" required></textarea>
+            <div class="advertencia">
+                <img class="imagen-advertencia" src="assets/exclamation.png">
+                <h6 class="mensaje-advertencia">Solo letras minúsculas y sin acento</h6>
+            </div>
+            <div class="area-botones">
+                    <button onclick="encriptar()" class="boton btn-encriptar">Encriptar</button>
+                    <button onclick="desencriptar()" class="boton btn-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="columna-derecha">
+            <textarea class="area-resultado" placeholder="No se ha encontrado un mensaje" cols=" 30" rows="10"></textarea>
+            <div class="area-boton-copiar">
+                <button class="boton btn-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h4>Hecho por Juan Fernando Calderon</h2>
+        <div>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+    </footer>
+</body>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>

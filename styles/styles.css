@@ -1,0 +1,204 @@
+:root{
+    --color-primario: #1E201E;
+    --color-secundario: #ECDFCC; 
+}
+
+*{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    min-height: 100vh;
+    font-size: 16px;
+    background-color: var(--color-primario);
+}
+header{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    padding-top: 2.5rem;
+}
+.header-titulo{
+    color: var(--color-secundario);
+    font-size: 1.875rem;
+}
+main{
+    box-sizing: border-box;
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    margin: 0.625rem;
+    gap: 10%;
+}
+.columna-izquierda{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+    margin: 1em 1em ;
+    padding: 1%;
+}
+.area-input{
+    width: 90%;
+    border: none;
+    resize: none;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    font-size: 1.25rem;
+}
+.area-input::placeholder{
+    color: var(--color-secundario);
+    
+}
+.area-input:focus{outline: none;}
+.area-input::-webkit-scrollbar{width: 0;}
+
+.advertencia{
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 0,625rem;
+}
+.imagen-advertencia{
+    height: 0.9375rem;
+    width: 0.9375rem;
+}
+.mensaje-advertencia{
+    color: var(--color-secundario);
+    font-size: 0.9375rem;
+    font-weight: 400;
+}
+.area-botones{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    gap: 1rem;
+}
+.boton{
+    box-sizing: border-box;
+    font-weight: bold;
+    border-radius: 1.25rem;
+    font-size: 1.25rem;
+    width: 12.5rem;
+    cursor: pointer;
+}
+.btn-encriptar{
+    color:#1E201E;
+    background-color: var(--color-secundario);
+    transition: background-color 0.15s, color 0.15s;
+}
+.btn-encriptar:hover{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    border: solid var(--color-secundario);
+}
+.btn-encriptar:active{
+    opacity: 0.8;
+}
+.btn-desencriptar{
+    color:var(--color-primario);
+    background-color: var(--color-secundario);
+    transition: background-color 0.15s, color 0.15s;
+}
+.btn-desencriptar:hover{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    border: solid var(--color-secundario);
+}
+.btn-desencriptar:active{
+    opacity: 0.8;
+}
+
+.columna-derecha{
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--color-secundario);
+    border-radius: 0.9375rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    width:90%;
+}
+.area-resultado{
+    display: flex;
+    align-items:center;
+    box-sizing:border-box;
+    resize: none;
+    border: none;
+    background-color:var(--color-secundario);
+    background-image:url("/assets/cancel.png");
+    background-repeat: no-repeat;
+    background-size: 12.5rem;
+    background-position: center;
+    color: var(--color-primario);
+    height: 90%;
+    font-size: 1.25rem;
+}
+.area-resultado.vacio{
+    background-image: none;
+}
+.area-resultado::placeholder{
+    color: var(--color-secundario);
+    font-weight: bold;
+} 
+.area-resultado:focus{outline: none;
+}
+.area-boton-copiar{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-copiar{
+    box-sizing: border-box;
+    border: 0.125rem solid var(--color-primario);
+    color: var(--color-primario);
+    background-color: #ECDFCC;  
+    width: 12.5rem;
+    transition: background-color 0.15s, color 0.15s;
+    display: none;
+}
+.btn-copiar:hover{
+    background-color: var(--color-primario);
+    color: #ECDFCC;
+    border: solid #ECDFCC;}
+.btn-copiar:active{background-color: #b7b2aa;}
+
+footer{
+    margin-top:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3rem;
+    width: 100%;
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    font-size: 1.25em;
+}
+@media (max-width: 768px){
+    body{
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    }
+    main{
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+        gap:5%;
+        margin: 1rem;
+
+    }
+    
+}
